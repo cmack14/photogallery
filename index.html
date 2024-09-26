@@ -91,38 +91,139 @@
                     background-color: #005f5d; 
                 }
 
+            /* Main */
+
+                main {
+                    padding: 5px; 
+                background-color: white;
+                color: black;
+                }
+
+                main h2 {
+                    text-align: center; 
+                    margin: 2px 0;
+                    text-transform: uppercase; 
+                }
+
+                main section {
+                    text-align: left; 
+                }
+
+            /* Gallery Stuff */
+
+            section .gallery-container {
+                    display: flex;                    
+                    flex-wrap: wrap;                 
+                    justify-content: center;  
+                    margin: 0 -10px;
+                    text-align: center;
+                color: white;                 
+                }
+
+                figure {
+                    flex: 1 1 calc(33.333% - 20px);  
+                    margin: 10px;                    
+                    box-sizing: border-box;         
+                    position: relative;       
+                    width: 300px;              
+                    margin: 10px;             
+                }
+
+
+                figure img {
+                    display: block;
+                    width: 100%;                     
+                    height: auto;                   
+                }
+
+                .overlay-tb {
+                    position: absolute;        
+                    top: 10%;                  
+                    left: 50%;                 
+                    transform: translate(-50%, -50%); 
+                    color: black;
+                    font-size: 1em;          
+                    text-transform: uppercase;
+                    font-weight: bold;        
+                    text-align: center;      
+                    z-index: 1;                
+                    width: 100%;              
+                    padding: 10px;             
+                    box-sizing: border-box;   
+                }
+
+                .overlay-bb {
+                    position: absolute;        
+                    top: 90%;                  
+                    left: 50%;                 
+                    transform: translate(-50%, -50%); 
+                    color: black;
+                    font-size: 1em;          
+                    text-transform: uppercase;
+                    font-weight: bold;        
+                    text-align: center;      
+                    z-index: 1;                
+                    width: 100%;              
+                    padding: 10px;             
+                    box-sizing: border-box;   
+                }
+
+                .overlay-tw {
+                    position: absolute;        
+                    top: 10%;                  
+                    left: 50%;                 
+                    transform: translate(-50%, -50%); 
+                    color: white;
+                    font-size: 1em;          
+                    text-transform: uppercase;
+                    font-weight: bold;        
+                    text-align: center;      
+                    z-index: 1;                
+                    width: 100%;              
+                    padding: 10px;             
+                    box-sizing: border-box;   
+                }
+
+                figcaption {
+                    position: absolute;        
+                    top: 90%;                  
+                    left: 50%;                 
+                    transform: translate(-50%, -50%); 
+                    color: white;         
+                    text-transform: uppercase;
+                    font-weight: bold;        
+                    text-align: center;      
+                    z-index: 1;                
+                    width: 100%;              
+                    padding: 10px;             
+                    box-sizing: border-box;   
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* _____ */
-
-main {
-    padding: 5px; 
-background-color: white;
-color: black;
-}
-
-
-
-
-main h2 {
-    text-align: center; 
-    margin: 2px 0;
-    text-transform: uppercase; 
-}
-
-
-
-
-main section {
-    text-align: left; 
-}
-
-
 /* _____ */
 /* _____ */
 /* _____ */
-/* _____ */
-/* _____ */
-/* _____ */
-
 
 
         </style>
@@ -150,55 +251,57 @@ main section {
             <section id="gallery">
                 <h2>Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-    
-                <figure>
-                    <img src="Photos/Chile.png" alt="Chile, 2001">
-                    <figcaption>Chile, 2001</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Guatemala.png" alt="Guatemala, 1997">
-                    <figcaption>Guatemala, 1997</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Hawaii.png" alt="Hawaii, 2010">
-                    <figcaption>Hawaii, 2010</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Iran.png" alt="Iran, 1999">
-                    <figcaption>Iran, 1999</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Ireland.png" alt="Ireland, 2012">
-                    <figcaption>Ireland, 2012</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Italy.png" alt="Italy, 2015">
-                    <figcaption>Italy, 2015</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Moab-Desert.png" alt="Moab Desert, 2020">
-                    <figcaption>Moab Desert, 2020</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Rocky-Mountains.png" alt="Rocky Mountains, 2009">
-                    <figcaption>Rocky Mountains, 2009</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Switzerland.png" alt="Switzerland, 2014">
-                    <figcaption>Switzerland, 2014</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/UK.png" alt="UK, 2005">
-                    <figcaption>UK, 2005</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/USA.png" alt="USA, 2021">
-                    <figcaption>USA, 2021</figcaption>
-                </figure>
-                <figure>
-                    <img src="Photos/Wyoming.png" alt="Wyoming, 2021">
-                    <figcaption>Wyoming, 2021</figcaption>
-                </figure>
+                
+                <div class="gallery-container">
+                    <figure>
+                        <img src="Photos/Chile.png" alt="Chile, 2001">
+                        <figcaption>Chile, 2001</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Guatemala.png" alt="Guatemala, 1997">
+                        <div class="overlay-tw">Guatemala, 1997</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Hawaii.png" alt="Hawaii, 2010">
+                        <div class="overlay-bw">Hawaii, 2010</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Iran.png" alt="Iran, 1999">
+                        <div class="overlay-tb">Iran, 1999</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Ireland.png" alt="Ireland, 2012">
+                        <div class="overlay-tb">Ireland, 2012</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Italy.png" alt="Italy, 2015">
+                        <div class="overlay-bb">Italy, 2015</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Moab-Desert.png" alt="Moab Desert, 2020">
+                        <div class="overlay-bw">Moab Desert, 2020</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Rocky-Mountains.png" alt="Rocky Mountains, 2009">
+                        <div class="overlay-tb">Rocky Mountains, 2009</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Switzerland.png" alt="Switzerland, 2014">
+                        <div class="overlay-tb">Switzerland, 2014</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/UK.png" alt="UK, 2005">
+                        <div class="overlay-tb">UK, 2005</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/USA.png" alt="USA, 2021">
+                        <div class="overlay-tb">USA, 2021</div>
+                    </figure>
+                    <figure>
+                        <img src="Photos/Wyoming.png" alt="Wyoming, 2021">
+                        <div class="overlay-tw">Wyoming, 2021</div>
+                    </figure>
+                </div>
             </section>
     
 
