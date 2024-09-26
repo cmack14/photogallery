@@ -14,8 +14,8 @@
                     margin-left: 15%;
                     margin-right: 15%;
                 }
-        
              /* Font Styling */
+             
                 p {
                     font-size: 1.25em;
                 }
@@ -74,7 +74,7 @@
                     position: fixed; 
                     bottom: 20px; 
                     right: 20px; 
-                    margin: 0; /
+                    margin: 0; 
                 }
 
                 nav ul li:last-child a {
@@ -262,8 +262,75 @@
                 }
 
 
-/* _____ */
 
+
+                /* Breakpoints */
+
+                    @media (max-width: 1330px) {
+                    }
+
+                    @media (max-width: 880px) {
+                    
+                        nav ul {
+                            justify-content: center;
+                        }
+                    
+                        figure {
+                            flex: 1 1 calc(50% - 20px); 
+                        }
+
+                        p {
+                            font-size: 1.10em;
+                        }
+                        
+                        figcaption, label, input, small {
+                            font-size: .9em;
+                        }
+                        
+                        nav a {
+                            font-size: 1.25em;
+                        }
+                        
+                        h1 {
+                            font-size: 2.5em;
+                        }
+                        
+                        h2 {
+                            font-size: 1.5em;
+                        }    
+                    }
+
+                    @media (max-width: 485px) {
+
+                        nav {
+                            text-align: center;
+                        }
+
+                        figure {
+                            flex: 1 1 100%; 
+                        }
+
+                        p {
+                            font-size: 1em;
+                        }
+                        
+                        figcaption, label, input, small {
+                            font-size: .75em;
+                        }
+                        
+                        nav a {
+                            font-size: 1em;
+                        }
+                        
+                        h1 {
+                            font-size: 2em;
+                        }
+                        
+                        h2 {
+                            font-size: 1em;
+                        }
+
+                    }
 
         </style>
     </head>
@@ -283,7 +350,7 @@
         <main>
             <section id="about">
                 <h2>About</h2>
-                <p>Hello! I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty, and it’s taken me all over the world.</p>
+                <p>Hello! I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty, and it's taken me all over the world.</p>
             </section>
     
     
@@ -358,7 +425,7 @@
 
       <footer id="contact">
         <h2>Contact</h2>
-        <p>Please fill out this form and I’ll connect with you soon.</p>
+        <p>Please fill out this form and I'll connect with you soon.</p>
         <form>
             <fieldset>
                 
@@ -369,22 +436,13 @@
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
         
                 <label>Message</label>
-                <input type="text" id="name" name="name" placeholder="What can I help you with?" required><br>
+                <input type="text" id="name1" name="name" placeholder="What can I help you with?" required><br>
                 <br>
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
         <br><br>
         <p>&copy; 2021 TK PHOTOGRAPHY</p>
-    </footer>
-
-
-
-
-
-
-
-
-        
+    </footer>   
     </body>
 </html>
