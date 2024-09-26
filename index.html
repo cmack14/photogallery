@@ -13,7 +13,6 @@
                     color: white;
                     margin-left: 15%;
                     margin-right: 15%;
-
                 }
         
              /* Font Styling */
@@ -84,7 +83,6 @@
                     padding: 10px 20px; 
                     border-radius: 5px; 
                     text-transform: uppercase; 
-                    text-decoration: none; 
                 }
 
                 nav ul li:last-child a:hover {
@@ -94,7 +92,7 @@
             /* Main */
 
                 main {
-                    padding: 5px; 
+                padding: 5px; 
                 background-color: white;
                 color: black;
                 }
@@ -109,9 +107,13 @@
                     text-align: left; 
                 }
 
+                main section {
+                    text-align: left; 
+                }
+
             /* Gallery Stuff */
 
-            section .gallery-container {
+                section .gallery-container {
                     display: flex;                    
                     flex-wrap: wrap;                 
                     justify-content: center;  
@@ -128,11 +130,6 @@
                     width: 300px;              
                     margin: 10px;             
                 }
-
-
-
-
-                
 
                 figure img {
                     display: block;
@@ -203,35 +200,68 @@
                     box-sizing: border-box;   
                 }
 
+            /* Form */
+                #contact {
+                    background-color: black;
+                    padding: 20px;
+                    text-align: center; 
+                    border: none;
+
+                }
+
+                label {
+                    text-align: left;
+                    display: block;  
+                    margin-bottom: 8px; 
+                    margin-left: 8px;
+                }
 
 
+                form {
+                    border: none;     
+                }
+
+                fieldset {
+                    border: none;     
+                }
+
+                #contact input[type="email"], input[type="text"], 
+                #contact textarea {
+                    background-color: #f0f0f0; 
+                    color: #007d7b;
+                    border: none;
+                    padding: 10px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                }
+
+                input::placeholder {
+                    text-transform: uppercase; 
+                    text-align: left;          
+                    color: #007d7b;           
+                    font-weight: bold;
+                    font-size: 15px; 
+                }
+
+                #contact button {
+                    width: 40vw; 
+                    padding: 10px; 
+                    background-color: #007d7b; 
+                    color: white; 
+                    border: none; 
+                    border-radius: 15px; 
+                    text-transform: uppercase; 
+                    font-size: 16px; 
+                    cursor: pointer; 
+                    transition: background-color 0.3s ease; 
+                }
+
+                #contact button[type="submit"]:hover {
+                    background-color: #005f5d; 
+                }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* _____ */
-/* _____ */
-/* _____ */
 /* _____ */
 
 
@@ -263,38 +293,25 @@
                 
                 <div class="gallery-container">
 
-
-
                     <figure class="image-overlaybw">
                         <img src="Photos/Chile.png" alt="Chile, 2001">
                         <figcaption>Chile, 2001</figcaption>
                     </figure>
-
-
-
-
-
 
                     <figure class="image-overlaytw">
                         <img src="Photos/Guatemala.png" alt="Guatemala, 1997">
                         <figcaption>Guatemala, 1997</figcaption>
                     </figure>
 
-
-
-                    
                     <figure class="image-overlaybw">
                         <img src="Photos/Hawaii.png" alt="Hawaii, 2010">
                         <figcaption>Hawaii, 2010</figcaption>
                     </figure>
-
-
+                    
                     <figure class="image-overlaytb">
                         <img src="Photos/Iran.png" alt="Iran, 1999">
                         <figcaption>Iran, 1999</figcaption>
                     </figure>
-
-
 
                     <figure class="image-overlaytb">
                         <img src="Photos/Ireland.png" alt="Ireland, 2012">
@@ -337,8 +354,29 @@
                     </figure>
                 </div>
             </section>
-    
+      </main>
 
+      <footer id="contact">
+        <h2>Contact</h2>
+        <p>Please fill out this form and I’ll connect with you soon.</p>
+        <form>
+            <fieldset>
+                
+                <label>Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+        
+                <label>Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+        
+                <label>Message</label>
+                <input type="text" id="name" name="name" placeholder="What can I help you with?" required><br>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <br><br>
+        <p>&copy; 2021 TK PHOTOGRAPHY</p>
+    </footer>
 
 
 
